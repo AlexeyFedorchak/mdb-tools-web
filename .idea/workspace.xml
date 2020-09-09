@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73df9784-1a4c-4bf0-ad51-8e27acb9eaee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/error.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/error.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/error.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/examples.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/examples.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/installation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/installation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/thank-you.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/thank-you.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/usage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/usage.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +167,8 @@
       <workItem from="1599641639961" duration="18432000" />
       <workItem from="1599668525676" duration="437000" />
       <workItem from="1599669126998" duration="388000" />
-      <workItem from="1599673380543" duration="4329000" />
+      <workItem from="1599673380543" duration="4617000" />
+      <workItem from="1599680921007" duration="338000" />
     </task>
     <servers />
   </component>
@@ -174,10 +180,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1599643886073" />
-    <state x="532" y="100" width="912" height="904" key="CommitChangelistDialog2" timestamp="1599677032926">
+    <state x="532" y="100" width="912" height="904" key="CommitChangelistDialog2" timestamp="1599677838820">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="532" y="100" width="912" height="904" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1599677032926" />
+    <state x="532" y="100" width="912" height="904" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1599677838820" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599655715032">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

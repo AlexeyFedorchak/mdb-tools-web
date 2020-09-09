@@ -42,13 +42,13 @@
     opacity: 0.3;
     margin-left: 15%;">
             <a href="https://www.linkedin.com/in/oleksii-fedorchak-3bab3361/">
-                <img style="margin-right: 60px;" width="100" height="60" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">
+                <img style="margin-right: 60px;" width="70" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">
             </a>
             <a href="https://github.com/OleksiiFedorchak/GmailLogo">
-                <img style="margin-right: 60px;" width="150" height="70" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/github.png" alt="">
+                <img style="margin-right: 60px;" width="100" height="45" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/github.png" alt="">
             </a>
             <a href="https://packagist.org/packages/gmail-logo/generator">
-                <img width="60" height="60" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/packagist.png" alt="">
+                <img width="40" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/packagist.png" alt="">
             </a>
         </div>
     </div>
