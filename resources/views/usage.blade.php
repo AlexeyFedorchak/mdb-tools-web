@@ -31,7 +31,7 @@
     </style>
 </head>
 <body class="antialiased">
-<div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+<div style="padding: 15px;" class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <h1 style="color: #3f3844;">Gmail Logo Generator: usage</h1>
@@ -53,7 +53,7 @@
             <br>
             <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">echo (new Painter())->typical();</span>
             <p>This will output the gmail logo with random background color for John Doe:</p>
-            <img src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/exampe_localhost_1.png" alt="">
+            <img width="400" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/exampe_localhost_1.png" alt="">
 
             <br>
             <br>
@@ -65,7 +65,7 @@
             For example you may do things like this:
             <p>
                 <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
-                    <pre>
+                    <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
 $temporaryLogo = new Generator('John Doe', [75, 175], Font::ROBOTO_REGULAR);
 
 return $temporaryLogo
@@ -79,7 +79,7 @@ return $temporaryLogo
                 </div>
             </p>
             Please also check this video, this will help you to understand better how to use that package:
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LcNiCNdjUZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/LcNiCNdjUZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </div>

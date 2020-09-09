@@ -31,7 +31,7 @@
     </style>
 </head>
 <body class="antialiased">
-<div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+<div style="padding: 15px;" class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <h1 style="color: #3f3844;">Gmail Logo Generator: examples</h1>
@@ -42,7 +42,7 @@
         <div style="margin-top: 100px; font-size: 20px;">
             <p>
             <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
-                    <pre>
+                    <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
     $temporaryLogo = new Generator('John Doe', [75, 175], Font::ROBOTO_REGULAR);
 
     return $temporaryLogo
@@ -59,7 +59,7 @@
 
             <p>
             <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
-                    <pre>
+                    <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
     $temporaryLogo = new Generator('john@mail.com', [75, 175], Font::ROBOTO_REGULAR);
 
     return $temporaryLogo
@@ -76,7 +76,7 @@
 
             <p>
             <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
-                    <pre>
+                    <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
     $temporaryLogo = new Generator('Abby', [75, 175], Font::ROBOTO_REGULAR);
 
     return $temporaryLogo
