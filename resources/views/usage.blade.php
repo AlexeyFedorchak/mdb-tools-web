@@ -80,6 +80,20 @@ return $temporaryLogo
             </p>
             Please also check this video, this will help you to understand better how to use that package:
             <iframe width="400" height="315" src="https://www.youtube.com/embed/LcNiCNdjUZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div class="footer" style="    width: 100%; margin-top: 50px;
+    opacity: 0.3;
+    margin-left: 25%;">
+                <a href="https://www.linkedin.com/in/oleksii-fedorchak-3bab3361/">
+                    <img style="margin-right: 60px;" width="100" height="60" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">
+                </a>
+                <a href="https://github.com/OleksiiFedorchak/GmailLogo">
+                    <img style="margin-right: 60px;" width="150" height="70" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/github.png" alt="">
+                </a>
+                <a href="https://packagist.org/packages/gmail-logo/generator">
+                    <img width="60" height="60" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/packagist.png" alt="">
+                </a>
+            </div>
         </div>
 
     </div>

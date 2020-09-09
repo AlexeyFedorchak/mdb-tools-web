@@ -58,14 +58,19 @@
                 </form>
             </div>
         </div>
-        <p>
-        <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
-            Join me on Linkedin:
-            <p>
-            <a href="https://www.linkedin.com/in/oleksii-fedorchak-web-developer/">https://www.linkedin.com/in/oleksii-fedorchak-web-developer/</a>
-        </p>
+        <div class="footer" style="    width: 100%;
+    opacity: 0.3;
+    margin-left: 25%;">
+            <a href="https://www.linkedin.com/in/oleksii-fedorchak-3bab3361/">
+                <img style="margin-right: 60px;" width="100" height="60" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">
+            </a>
+            <a href="https://github.com/OleksiiFedorchak/GmailLogo">
+                <img style="margin-right: 60px;" width="150" height="70" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/github.png" alt="">
+            </a>
+            <a href="https://packagist.org/packages/gmail-logo/generator">
+                <img width="60" height="60" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/packagist.png" alt="">
+            </a>
         </div>
-        </p>
 
     </div>
 </div>
