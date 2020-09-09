@@ -58,6 +58,14 @@
                 </form>
             </div>
         </div>
+        <p>
+        <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
+            Join me on Linkedin:
+            <p>
+            <a href="https://www.linkedin.com/in/oleksii-fedorchak-web-developer/">https://www.linkedin.com/in/oleksii-fedorchak-web-developer/</a>
+        </p>
+        </div>
+        </p>
 
     </div>
 </div>
