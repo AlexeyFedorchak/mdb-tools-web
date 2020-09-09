@@ -40,7 +40,7 @@
         </h2>
         <div class="footer" style="    width: 100%; margin-top: 100px;
     opacity: 0.3;
-    margin-left: 15%;">
+    margin-left: 22%;">
             <a href="https://www.linkedin.com/in/oleksii-fedorchak-3bab3361/">
                 <img style="margin-right: 60px;" width="70" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">
             </a>
