@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ContactRequest;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Telegram\Bot\Api;
 use Telegram\Bot\Exceptions\TelegramSDKException;
 use Illuminate\Http\RedirectResponse;
+use GuzzleHttp\Exception\GuzzleException;
 
 class ContactController extends Controller
 {
@@ -22,6 +23,11 @@ class ContactController extends Controller
      */
     public function post(Request $request)
     {
+        if (!$this->verifyCaptcha($request->get('g-recaptcha-response')))
+            return view('error')->with([
+                'message' => 'Please verify that you are not a robot!'
+            ]);
+
         if (empty($request->name) && empty($request->email))
             return view('error')->with([
                 'message' => 'Please tell me your name and email!'
@@ -53,5 +59,30 @@ class ContactController extends Controller
     public function thankYou()
     {
         return view('thank-you');
+    }
+
+    /**
+     * verify captcha
+     *
+     * @param string|null $captchaCode
+     * @return mixed
+     * @throws GuzzleException
+     */
+    private function verifyCaptcha(?string $captchaCode)
+    {
+        if (empty($captchaCode))
+            return false;
+
+        $client = new Client();
+        $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
+            'form_params' => [
+                'secret' => env('GOOGLE_CAPTCHA_PRIVATE'),
+                'response' => $captchaCode,
+            ]
+        ]);
+
+        $renderedResponse = json_decode($response->getBody()->getContents());
+
+        return $renderedResponse->success;
     }
 }

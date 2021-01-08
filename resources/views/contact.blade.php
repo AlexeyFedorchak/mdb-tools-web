@@ -10,6 +10,7 @@
 
         gtag('config', 'UA-177527967-1');
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,6 +53,9 @@
 
                     <label for="subject">Your message</label>
                     <textarea id="subject" name="message" placeholder="Write your questions, tips here.." style="height:200px"></textarea>
+
+                    <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_CAPTCHA_PUBLIC') }}"></div>
+                    <br/>
 
                     <input type="submit" value="Start a discussion!" style="background: #F7FAFC; color: #3f3844; border: 1px solid #D4D1D1">
 
