@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gmail Logo Generator (Composer PHP Package)</title>
+    <title>PHP Parser For MDB Files (Composer Package)</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -34,62 +34,56 @@
 <div style="padding: 15px;" class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h1 style="color: #3f3844;">Gmail Logo Generator: examples</h1>
-        <h2>
-            What images can be generated?
-        </h2>
+        <h1 style="color: #3f3844;">PHP Parser For MDB Files: examples</h1>
+
+{{--        <h2>--}}
+{{--            With this package you can things like this:--}}
+{{--        </h2>--}}
 
         <div style="margin-top: 100px; font-size: 20px;">
             <p>
+            <h3>To load specific .mdb file and fetch list of tables you can do this:</h3>
             <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
                     <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
-    $temporaryLogo = new Generator('John Doe', [75, 175], Font::ROBOTO_REGULAR);
+use MDBTools\Facades\Parsers\MDBParser;
 
-    return $temporaryLogo
-        ->setSizes(300,300)
-        ->setBackgroundColor(0, 0, 0)
-        ->setTextColor(255,255,255)
-        ->setTextSize(110)
-        ->png()
-        ->html();
+$parser = MDBParser::loadFile('/path/to/file');
+
+//see table names...
+$tables = $parser->tables();
+
+//parse data from one chosen table...
+print_r($parser->selectTable('some_table')->toArray());
                     </pre>
             </div>
             </p>
-            <img src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/example_test_1.png" alt="">
 
+        </div>
+
+        <div style="margin-top: 100px; font-size: 20px;">
             <p>
+            <h3>If you need to get data from some table in form of Array, you can this:</h3>
             <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
                     <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
-    $temporaryLogo = new Generator('john@mail.com', [75, 175], Font::ROBOTO_REGULAR);
-
-    return $temporaryLogo
-        ->setSizes(300,300)
-        ->setBackgroundColor(175, 50, 100)
-        ->setTextColor(0,0,0)
-        ->setTextSize(110)
-        ->png()
-        ->html();
+//parse data from one chosen table...
+print_r($parser->selectTable('some_table')->toArray());
                     </pre>
             </div>
             </p>
-            <img src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/example_test_2.png" alt="">
 
+        </div>
+
+        <div style="margin-top: 100px; font-size: 20px;">
             <p>
+            <h3>... in JSON:</h3>
             <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
                     <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
-    $temporaryLogo = new Generator('Abby', [75, 175], Font::ROBOTO_REGULAR);
-
-    return $temporaryLogo
-        ->setSizes(300,300)
-        ->setBackgroundColor(150, 150, 100)
-        ->setTextColor(0,0,0)
-        ->setTextSize(250)
-        ->png()
-        ->html();
+//parse data from one chosen table...
+print_r($parser->selectTable('some_table')->toJson());
                     </pre>
             </div>
             </p>
-            <img src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/example_test_3.png" alt="">
+
         </div>
 
 {{--        <div class="footer" style="    width: 100%; margin-top: 50px;--}}

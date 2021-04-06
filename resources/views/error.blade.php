@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gmail Logo Generator (Composer PHP Package)</title>
+    <title>PHP Parser For MDB Files (Composer Package)</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -43,16 +43,19 @@
     padding: 10px;
     border: 1px solid #D4D1D1;
     border-radius: 7px;">Try again!</a>
-        <div class="footer" style="    width: 100%; margin-top: 100px;
+        <br>
+        <br>
+        <br>
+        <div class="footer" style="    width: 100%;
     opacity: 0.3;
-    margin-left: 15%;">
+    margin-left: 25%;">
             <a href="https://www.linkedin.com/in/oleksii-fedorchak-3bab3361/">
                 <img style="margin-right: 60px;" width="70" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">
             </a>
-            <a href="https://github.com/OleksiiFedorchak/GmailLogo">
+            <a href="https://github.com/OleksiiFedorchak/mdb-tools">
                 <img style="margin-right: 60px;" width="100" height="45" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/github.png" alt="">
             </a>
-            <a href="https://packagist.org/packages/gmail-logo/generator">
+            <a href="https://packagist.org/packages/mdb-tools/mdb-parser">
                 <img width="40" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/packagist.png" alt="">
             </a>
         </div>

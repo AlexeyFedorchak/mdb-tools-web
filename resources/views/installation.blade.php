@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gmail Logo Generator (Composer PHP Package)</title>
+    <title>PHP Parser For MDB Files (Composer Package)</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -34,30 +34,40 @@
 <div style="display: flex;padding: 15px;" class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h1 style="color: #3f3844;">Gmail Logo Generator: installation</h1>
+        <h1 style="color: #3f3844;">PHP Parser For MDB Files: installation</h1>
         <h2>
-            How to install Gmail Logo Generator using Composer?
+            How to install the package using Composer?
         </h2>
 
         <div style="margin-top: 100px; font-size: 20px;">
-            If you are using PHP framework, just run:
+            Install utility <span style="font-weight: bold">mdb-tools</span>:
             <br>
             <br>
-            <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">composer require gmail-logo/generator</span>
+            <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">apt-get update -y</span>
+            <br>
+            <br>
+            <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">apt-get install -y mdbtools</span>
         </div>
 
         <div style="margin-top: 100px; font-size: 20px;">
-            If you are using native PHP, you may run such commands:
-            <p>
-                <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">cd Project</span>
-            </p>
-            <p>
-                <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">composer init</span>
-            </p>
-            <p>
-                <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">composer require gmail-logo/generator</span>
-            </p>
+            Install package as composer dependency in your project:
+            <br>
+            <br>
+            <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">composer require mdb-tools/mdb-parser</span>
         </div>
+
+{{--        <div style="margin-top: 100px; font-size: 20px;">--}}
+{{--            If you are using native PHP, you may run such commands:--}}
+{{--            <p>--}}
+{{--                <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">cd Project</span>--}}
+{{--            </p>--}}
+{{--            <p>--}}
+{{--                <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">composer init</span>--}}
+{{--            </p>--}}
+{{--            <p>--}}
+{{--                <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">composer require mdb-tools/mdb-parser</span>--}}
+{{--            </p>--}}
+{{--        </div>--}}
 {{--        <div class="footer" style="    width: 100%; margin-top: 100px;--}}
 {{--    opacity: 0.3;--}}
 {{--    margin-left: 15%;">--}}

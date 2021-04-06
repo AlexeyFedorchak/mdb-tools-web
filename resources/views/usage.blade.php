@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gmail Logo Generator (Composer PHP Package)</title>
+    <title>PHP Parser For MDB Files (Composer Package)</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -34,68 +34,67 @@
 <div style="padding: 15px;" class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h1 style="color: #3f3844;">Gmail Logo Generator: usage</h1>
+        <h1 style="color: #3f3844;">PHP Parser For MDB Files: usage</h1>
         <h2>
-            How to use Gmail Logo Generator in your project?
+            How to use the parser in your project?
         </h2>
 
         <div style="margin-top: 100px; font-size: 20px;">
-            To include Gmail Logo Generator in your code you may do so:
+            To include this parser in your code you may do so:
             <br>
             <br>
-            <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">Use GmailLogo\Painter;</span>
+            <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">use MDBTools\Facades\Parsers\MDBParser;</span>
             <br>
-            <p><span style="font-weight: bold">Painter</span> is a main class which is managing drawing the image. He is putting all methods together to build image with specific sizes, colors, fonts and text.</p>
-            <p>By default this class contains default function <span style="font-weight: bold">typical()</span>,
-                which is generating typical gmail logo with default background color for imaginary person with name "John Doe".
-                You may use this function in your controller like this:
-            </p>
             <br>
-            <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">echo (new Painter())->typical();</span>
-            <p>This will output the gmail logo with random background color for John Doe:</p>
-            <img width="400" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/exampe_localhost_1.png" alt="">
 
+            Parsing .mdb files is happening in main class MDBParser.php. This class has corresponded facade.
             <br>
             <br>
-            But obviously that is not enough for you! This is why you may generate your custom images! For that you need to access another class: <span style="font-weight: bold">Generator.</span>
-            <p>
-                <span style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">Use GmailLogo\Generator;</span>
-            </p>
-            <span style="font-weight: bold">Generator</span> allows you to generate images with custom settings. This class does all the background work.
-            For example you may do things like this:
-            <p>
-                <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
+            <span style="font-weight: bold">It is recommended to use facade in your code.</span>
+            <br>
+            <br>
+            The facade was created to make MDBParser class be able to handle static methods. That simplify user's code.
+            <br>
+            Once you included the MDBParser.php using facades, you can load you file:
+            <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
                     <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
-$temporaryLogo = new Generator('John Doe', [75, 175], Font::ROBOTO_REGULAR);
+use MDBTools\Facades\Parsers\MDBParser;
 
-return $temporaryLogo
-    ->setSizes(300,300)
-    ->setRandomBackgroundColor()
-    ->setTextColor(255,255,255)
-    ->setTextSize(110)
-    ->png()
-    ->html();
-                    </pre>
-                </div>
-            </p>
-            Please also check this video, this will help you to understand better how to use that package:
-            <iframe width="400" height="315" src="https://www.youtube.com/embed/LcNiCNdjUZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+$parser = MDBParser::loadFile('/path/to/file');</pre>
+            </div>
 
-{{--            <div class="footer" style="    width: 100%; margin-top: 50px;--}}
-{{--    opacity: 0.3;--}}
-{{--    margin-left: 25%;">--}}
-{{--                <a href="https://www.linkedin.com/in/oleksii-fedorchak-3bab3361/">--}}
-{{--                    <img style="margin-right: 60px;" width="70" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">--}}
-{{--                </a>--}}
-{{--                <a href="https://github.com/OleksiiFedorchak/GmailLogo">--}}
-{{--                    <img style="margin-right: 60px;" width="100" height="45" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/github.png" alt="">--}}
-{{--                </a>--}}
-{{--                <a href="https://packagist.org/packages/gmail-logo/generator">--}}
-{{--                    <img width="40" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/packagist.png" alt="">--}}
-{{--                </a>--}}
-{{--            </div>--}}
+            <br>
+            <br>
+            After you loaded the file your variable $parser can be used for fetching tables.
+            <br>
+            To get list of tables you can do like this:
+            <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
+                    <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
+$parser->tables();</pre>
+            </div>
+
+            <br>
+            <br>
+            List of tables is fetched in form of array, every item of which is MDBTable class instance.
+            This class contains methods for parsing tables, so it is reasonable to do like this:
+            <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
+                    <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
+foreach ($parser->tables() as $table) {
+    $data = $table->toJson();
+    //do something with data...
+}</pre>
+            </div>
+
+            <br>
+            <br>
+            Also you can parse data from specific table from under MDBParser class like this:
+            <div style="background: #DED6D5; padding: 10px; border-left: 2px solid black;">
+                    <pre style="white-space: pre-wrap;word-wrap: break-word;text-align: justify;">
+$parser->selectTable('some_table')->toArray();</pre>
+            </div>
         </div>
-
+        <br>
+        <br>
     </div>
 </div>
 </div>

@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gmail Logo Generator (Composer PHP Package)</title>
+    <title>PHP Parser For MDB Files (Composer Package)</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -34,9 +34,9 @@
 <div style="padding: 15px;display: flex;" class="relative items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h1 style="color: #3f3844;">Gmail Logo Generator (Composer PHP Package)</h1>
+        <h1 style="color: #3f3844;">PHP Parser For MDB Files (Composer package)</h1>
         <h2>
-            Open source PHP Package for generating gmail logos managed by Composer
+            Open source PHP Package for parsing MS Access backup files
         </h2>
         <h3>This package is totally not commercial project</h3>
 
@@ -95,17 +95,17 @@
                 </div>
             </div>
         </div>
-
-        <div class="footer" style="    width: 100%; margin-top: 100px;
+        <br>
+        <div class="footer" style="    width: 100%;
     opacity: 0.3;
     margin-left: 25%;">
             <a href="https://www.linkedin.com/in/oleksii-fedorchak-3bab3361/">
                 <img style="margin-right: 60px;" width="70" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/linkedin.png" alt="">
             </a>
-            <a href="https://github.com/OleksiiFedorchak/GmailLogo">
+            <a href="https://github.com/OleksiiFedorchak/mdb-tools">
                 <img style="margin-right: 60px;" width="100" height="45" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/github.png" alt="">
             </a>
-            <a href="https://packagist.org/packages/gmail-logo/generator">
+            <a href="https://packagist.org/packages/mdb-tools/mdb-parser">
                 <img width="40" height="40" src="https://gmail-logo-fonts.ams3.digitaloceanspaces.com/images/packagist.png" alt="">
             </a>
         </div>
